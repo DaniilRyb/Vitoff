@@ -16,15 +16,15 @@ const routesChildren: Routes = [
   { path: 'grus-auto', component: GrusAutoComponent },
   { path: 'trailer', component: TrailerEquipmentComponent },
   { path: 'vehicle-car', component: LightVehicleComponent },
-  { path: '**', component: NotFoundComponent }
+  { path: 'repair/**', component: NotFoundComponent }
 ]
 
-const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', redirectTo: '', pathMatch: 'full' },
+const routesApp: Routes = [
+  { path: '', redirectTo: '/repair', pathMatch: 'full'},
+  { path: 'home', redirectTo: '/repair', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'repair', component: BlockRepairComponent, children: routesChildren },
-  { path: "**", component: NotFoundComponent}
+  { path: '**', component: NotFoundComponent }
   ]
 
 @NgModule({
@@ -40,7 +40,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routesApp)
   ],
   providers: [],
   bootstrap: [AppComponent]

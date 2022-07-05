@@ -1,3 +1,7 @@
 li {
-  list-style-type: none;
+  list-style-type: auto;
+}
+
+.description {
+  font-size: 20px;
 }
