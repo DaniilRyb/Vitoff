@@ -10,6 +10,7 @@ import { BlockRepairComponent } from './block-repair/block-repair.component';
 import { GrusAutoComponent } from './grus-auto/grus-auto.component';
 import { TrailerEquipmentComponent } from './trailer-equipment/trailer-equipment.component';
 import { LightVehicleComponent } from './light-vehicle/light-vehicle.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 const routesChildren: Routes = [
@@ -36,7 +37,8 @@ const routesApp: Routes = [
     BlockRepairComponent,
     GrusAutoComponent,
     TrailerEquipmentComponent,
-    LightVehicleComponent
+    LightVehicleComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
