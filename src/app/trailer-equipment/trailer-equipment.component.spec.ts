@@ -8,9 +8,9 @@ describe('TrailerEquipmentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TrailerEquipmentComponent ]
+      declarations: [TrailerEquipmentComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

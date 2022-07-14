@@ -8,9 +8,9 @@ describe('GrusAutoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GrusAutoComponent ]
+      declarations: [GrusAutoComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

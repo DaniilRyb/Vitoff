@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { Routes, RouterModule } from "@angular/router";
+import { RouterModule, Routes } from "@angular/router";
 import { BlockRepairComponent } from './block-repair/block-repair.component';
 import { GrusAutoComponent } from './grus-auto/grus-auto.component';
 import { TrailerEquipmentComponent } from './trailer-equipment/trailer-equipment.component';
@@ -14,19 +14,19 @@ import { MenuComponent } from './menu/menu.component';
 
 
 const routesChildren: Routes = [
-  { path: 'grus-auto', component: GrusAutoComponent },
-  { path: 'trailer', component: TrailerEquipmentComponent },
-  { path: 'vehicle-car', component: LightVehicleComponent },
-  { path: 'repair/**', component: NotFoundComponent }
+  {path: 'grus-auto', component: GrusAutoComponent},
+  {path: 'trailer', component: TrailerEquipmentComponent},
+  {path: 'vehicle-car', component: LightVehicleComponent},
+  {path: 'repair/**', component: NotFoundComponent}
 ]
 
 const routesApp: Routes = [
-  { path: '', redirectTo: '/repair', pathMatch: 'full'},
-  { path: 'home', redirectTo: '/repair', pathMatch: 'full' },
-  { path: 'about', component: AboutComponent },
-  { path: 'repair', component: BlockRepairComponent, children: routesChildren },
-  { path: '**', component: NotFoundComponent }
-  ]
+  {path: '', redirectTo: '/repair', pathMatch: 'full'},
+  {path: 'home', redirectTo: '/repair', pathMatch: 'full'},
+  {path: 'about', component: AboutComponent},
+  {path: 'repair', component: BlockRepairComponent, children: routesChildren},
+  {path: '**', component: NotFoundComponent}
+]
 
 @NgModule({
   declarations: [
@@ -47,4 +47,5 @@ const routesApp: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -1,14 +1,15 @@
 <div class="wrapper">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-lg">
-    <a class="navbar-brand m-2 text-uppercase fw-bold" routerLink="/" >Vitoff</a>
-    <button (click)="menu.show()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand m-2 text-uppercase fw-bold" routerLink="/">Vitoff</a>
+    <button (click)="menu.show()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-target="#navbarNav" data-toggle="collapse" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-         <a class="nav-link" routerLink="/home">Home</a>
+          <a class="nav-link" routerLink="/home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/about">Адрес</a>
@@ -24,38 +25,38 @@
 <router-outlet></router-outlet>
 
 <!--<div class="container footer"> !-->
-  <footer class="text-center text-lg-start text-white footer"  style="background-color: #3e4551; width: 100%">
-    <div class="container p-4 pb-0">
-      <section class="">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Ремонт блоков управления</h5>
-            <p>Организация осуществляет ремонт электронных блоков управления по различным направлениям</p>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Контакты</h5>
-            <ul class="list-group-flush mb-0">
-              <li><a href="mailto:20-71@mail.ru" class="text-white ">Почта Mail</a>
-            </li>
-                <li><a href="mailto:pochtaworld7@gmail.com" class="text-white">Почта Google для доп. информации</a>
-              </li>
-              <li>
-                <a href="https://vk.com/daniil_ryb" class="text-white">VK</a>
-              </li>
-            </ul>
-          </div>
+<footer class="text-center text-lg-start text-white footer" style="background-color: #3e4551; width: 100%">
+  <div class="container p-4 pb-0">
+    <section class="">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Ремонт блоков управления</h5>
+          <p>Организация осуществляет ремонт электронных блоков управления по различным направлениям</p>
         </div>
-        </section>
-      <hr class="mb-2"/>
-    </div>
-    <div class="text-center p-3 bg-primary">
-      © 2016-2022 Все права защищены: <a class="text-white" href="https://vitoff.ru/">vitoff.ru</a>
-    </div>
-    <!--<a href="https://metrika.yandex.ru/stat/?id=43077259&amp;from=informer" target="_blank" rel="nofollow">
-      <img src="https://informer.yandex.ru/informer/43077259/3_1_FFFFFFFF_FFFFFFFF_0_pageviews" style="width:88px;
-       height:31px; border:0;" alt="Яндекс.Метрика"
-           title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
-           class="ym-advanced-informer" data-cid="43077259" data-lang="ru"></a>-->
-   </footer>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Контакты</h5>
+          <ul class="list-group-flush mb-0">
+            <li><a class="text-white " href="mailto:20-71@mail.ru">Почта Mail</a>
+            </li>
+            <li><a class="text-white" href="mailto:pochtaworld7@gmail.com">Почта Google для доп. информации</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://vk.com/daniil_ryb">VK</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <hr class="mb-2"/>
+  </div>
+  <div class="text-center p-3 bg-primary">
+    © 2016-2022 Все права защищены: <a class="text-white" href="https://vitoff.ru/">vitoff.ru</a>
+  </div>
+  <!--<a href="https://metrika.yandex.ru/stat/?id=43077259&amp;from=informer" target="_blank" rel="nofollow">
+    <img src="https://informer.yandex.ru/informer/43077259/3_1_FFFFFFFF_FFFFFFFF_0_pageviews" style="width:88px;
+     height:31px; border:0;" alt="Яндекс.Метрика"
+         title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+         class="ym-advanced-informer" data-cid="43077259" data-lang="ru"></a>-->
+</footer>
 
 

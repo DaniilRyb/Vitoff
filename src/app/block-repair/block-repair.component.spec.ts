@@ -8,9 +8,9 @@ describe('BlockRepairComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BlockRepairComponent ]
+      declarations: [BlockRepairComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

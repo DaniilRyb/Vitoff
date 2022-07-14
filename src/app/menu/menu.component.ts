@@ -1,4 +1,4 @@
-import {Component, HostBinding, HostListener, OnInit} from '@angular/core';
+import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -10,9 +10,12 @@ export class MenuComponent implements OnInit {
   @HostBinding('class')
   hostClass = 'hidden'
   private skipClick = false
-  constructor() { }
 
-  ngOnInit(): void {}
+  constructor() {
+  }
+
+  ngOnInit(): void {
+  }
 
   show() {
     this.hostClass = ''
