@@ -1,16 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-block-repair',
   templateUrl: './block-repair.component.html',
   styleUrls: ['./block-repair.component.css']
 })
-export class BlockRepairComponent implements OnInit {
+export class BlockRepairComponent {
 
   constructor() {
   }
 
-  ngOnInit(): void {
-  }
 
 }
